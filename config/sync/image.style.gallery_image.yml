@@ -1,0 +1,15 @@
+uuid: ddf199b4-02a9-48c4-81c0-a53c280d8f92
+langcode: en
+status: true
+dependencies: {  }
+name: gallery_image
+label: 'Gallery Image (820 x 820)'
+effects:
+  0d11b854-b115-488f-9bfd-089380b3d87a:
+    uuid: 0d11b854-b115-488f-9bfd-089380b3d87a
+    id: image_scale_and_crop
+    weight: 2
+    data:
+      width: 820
+      height: 820
+      anchor: center-center

@@ -1,0 +1,66 @@
+uuid: fe98f2d7-bf45-459f-9ada-ab22331ffdab
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.wonder.body
+    - field.field.node.wonder.field_wonder_image
+    - image.style.thumbnail
+    - node.type.wonder
+  module:
+    - image
+    - path
+id: node.wonder.default
+targetEntityType: node
+bundle: wonder
+mode: default
+content:
+  created:
+    type: datetime_timestamp
+    weight: 2
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_wonder_image:
+    type: image_image
+    weight: 5
+    region: content
+    settings:
+      progress_indicator: throbber
+      preview_image_style: thumbnail
+    third_party_settings: {  }
+  path:
+    type: path
+    weight: 3
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  status:
+    type: boolean_checkbox
+    weight: 4
+    region: content
+    settings:
+      display_label: true
+    third_party_settings: {  }
+  title:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  uid:
+    type: entity_reference_autocomplete
+    weight: 1
+    region: content
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  body: true
+  promote: true
+  sticky: true

@@ -1,0 +1,31 @@
+uuid: 17ca2649-294e-4b45-9f6b-ec0e3ba1a529
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.wonder.body
+    - field.field.node.wonder.field_wonder_image
+    - image.style.gallery_image
+    - node.type.wonder
+  module:
+    - image
+    - user
+id: node.wonder.default
+targetEntityType: node
+bundle: wonder
+mode: default
+content:
+  field_wonder_image:
+    type: image
+    label: hidden
+    settings:
+      image_link: ''
+      image_style: gallery_image
+      image_loading:
+        attribute: lazy
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  body: true
+  links: true

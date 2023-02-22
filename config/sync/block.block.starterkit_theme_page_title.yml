@@ -1,0 +1,20 @@
+uuid: 6eb8fa0d-e957-40ff-a195-6f145859d159
+langcode: en
+status: true
+dependencies:
+  theme:
+    - starterkit_theme
+_core:
+  default_config_hash: 6aOgWsNTXjqrDm98TXSAjP6qd2nCijD1xw45MrnbK-Y
+id: starterkit_theme_page_title
+theme: starterkit_theme
+region: sidebar_first
+weight: -5
+provider: null
+plugin: page_title_block
+settings:
+  id: page_title_block
+  label: 'Page title'
+  label_display: '0'
+  provider: core
+visibility: {  }

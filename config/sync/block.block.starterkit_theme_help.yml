@@ -1,0 +1,22 @@
+uuid: cb49dddb-2aa1-483a-978b-62dfac6953fa
+langcode: en
+status: true
+dependencies:
+  module:
+    - help
+  theme:
+    - starterkit_theme
+_core:
+  default_config_hash: VfPFqqxfkomud5CO8DUijw85QIl9GIxh_nIxLOYESxg
+id: starterkit_theme_help
+theme: starterkit_theme
+region: sidebar_first
+weight: 0
+provider: null
+plugin: help_block
+settings:
+  id: help_block
+  label: Help
+  label_display: '0'
+  provider: help
+visibility: {  }
