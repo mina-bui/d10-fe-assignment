@@ -1,0 +1,22 @@
+uuid: 6c24c222-9a4f-44c7-bede-713fd8e4f28f
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - nofrills
+_core:
+  default_config_hash: VhBzWb7lMRtIOg9G7VSw_0uopi-7zXeHq4vXqqV1HFE
+id: nofrills_breadcrumbs
+theme: nofrills
+region: navbar
+weight: 0
+provider: null
+plugin: system_breadcrumb_block
+settings:
+  id: system_breadcrumb_block
+  label: Breadcrumbs
+  label_display: '0'
+  provider: system
+visibility: {  }

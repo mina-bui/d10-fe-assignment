@@ -1,0 +1,22 @@
+uuid: d496dcdb-834c-4b4f-b0e3-4566182e869d
+langcode: en
+status: true
+dependencies:
+  theme:
+    - nofrills
+_core:
+  default_config_hash: nGE3EoPQQaQCuqTUtZgw0-KIzmrqdKDzdNQf2JyPUt4
+id: nofrills_primary_local_tasks
+theme: nofrills
+region: navbar
+weight: -4
+provider: null
+plugin: local_tasks_block
+settings:
+  id: local_tasks_block
+  label: 'Primary tabs'
+  label_display: '0'
+  provider: core
+  primary: true
+  secondary: false
+visibility: {  }

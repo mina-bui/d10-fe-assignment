@@ -1,0 +1,22 @@
+uuid: b38ba061-fc19-49c9-ae91-6c6ea3444be7
+langcode: en
+status: true
+dependencies:
+  module:
+    - help
+  theme:
+    - nofrills
+_core:
+  default_config_hash: VfPFqqxfkomud5CO8DUijw85QIl9GIxh_nIxLOYESxg
+id: nofrills_help
+theme: nofrills
+region: navbar
+weight: 0
+provider: null
+plugin: help_block
+settings:
+  id: help_block
+  label: Help
+  label_display: '0'
+  provider: help
+visibility: {  }

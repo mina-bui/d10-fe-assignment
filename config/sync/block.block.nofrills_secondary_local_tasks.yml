@@ -1,0 +1,22 @@
+uuid: be940f88-a499-4d45-891e-22a2a39a0f86
+langcode: en
+status: true
+dependencies:
+  theme:
+    - nofrills
+_core:
+  default_config_hash: ydSxdq7R66I8UMC460rOzlfzvlUL4VRbdwc6z9DWaUI
+id: nofrills_secondary_local_tasks
+theme: nofrills
+region: navbar
+weight: -2
+provider: null
+plugin: local_tasks_block
+settings:
+  id: local_tasks_block
+  label: 'Secondary tabs'
+  label_display: '0'
+  provider: core
+  primary: false
+  secondary: true
+visibility: {  }

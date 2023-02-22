@@ -1,0 +1,22 @@
+uuid: 0324baa0-51af-4911-9a15-92ccf7e77c32
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - nofrills
+_core:
+  default_config_hash: eYL19CLDyinGTWYQfBD1DswWzglEotE_kHnHx3AxTXM
+id: nofrills_powered
+theme: nofrills
+region: navbar
+weight: 0
+provider: null
+plugin: system_powered_by_block
+settings:
+  id: system_powered_by_block
+  label: 'Powered by Drupal'
+  label_display: '0'
+  provider: system
+visibility: {  }
