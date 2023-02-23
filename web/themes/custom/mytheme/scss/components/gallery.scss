@@ -1,6 +1,30 @@
 // * Gallery
 
 .gallery.view {
+  article {
+    .node__title {
+      font-size: 0;
+      margin: 0;
+      height: 0;
+    }
+    .node__content {
+      padding: 0;
+    }
+
+    .field--name-field-wonder-image {
+      display: inline-block;
+      overflow: hidden;
+
+      img {
+        transform: scale(117.5%);
+        -ms-transform: scale(117.5%); // IE 9
+        -moz-transform: scale(117.5%); // Firefox
+        -webkit-transform: scale(117.5%); // Safari and Chrome
+        -o-transform: scale(117.5%); // Opera
+      }
+    }
+  }
+
   .view-content {
     display: flex;
     flex-wrap: wrap;
@@ -22,40 +46,38 @@
         flex: 0 0 calc(50% - 3.125em);
       }
 
-      // Equilateral triangle shaped
-      &:nth-of-type(2) {
+      // Uniquely shaped gallery images
+      // -------------
+
+      &:nth-of-type(2),
+      &:nth-of-type(3),
+      &:nth-of-type(4) {
         .field--name-field-wonder-image img {
-          clip-path: polygon(50% 0, 100% 100%, 0 100%);
+          transform: scale(1);
+          -ms-transform: scale(1); // IE 9
+          -moz-transform: scale(1); // Firefox
+          -webkit-transform: scale(1); // Safari and Chrome
+          -o-transform: scale(1); // Opera
         }
+      }
+
+      // Equilateral triangle shaped
+      &:nth-of-type(2) .field--name-field-wonder-image img {
+        clip-path: polygon(50% 0, 100% 100%, 0 100%);
       }
 
       // Circle shaped
-      &:nth-of-type(3) {
-        .field--name-field-wonder-image img {
-          border-radius: 100%;
-        }
+      &:nth-of-type(3) .field--name-field-wonder-image img {
+        border-radius: 100%;
       }
 
       // Rectangle shaped
-      &:nth-of-type(4) {
-        .field--name-field-wonder-image img {
-          aspect-ratio: 2/3;
-          object-fit: cover;
-          width: 70%;
-          margin: 0 auto;
-        }
+      &:nth-of-type(4) .field--name-field-wonder-image img {
+        aspect-ratio: 2/3;
+        object-fit: cover;
+        width: 70%;
+        margin: 0 auto;
       }
-    }
-  }
-
-  article {
-    .node__title {
-      font-size: 0;
-      margin: 0;
-      height: 0;
-    }
-    .node__content {
-      padding: 0;
     }
   }
 }
