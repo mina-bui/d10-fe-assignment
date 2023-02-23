@@ -14,6 +14,11 @@ h6 {
   color: inherit;
 }
 
+h1 {
+  font-family: $ff-primary;
+  letter-spacing: 2px;
+}
+
 .page-wrapper,
 .social-bar {
   background-color: $color-primary;
