@@ -1,0 +1,73 @@
+// * Header
+
+header {
+  // Branding
+  // -------------
+
+  .site-branding {
+    background-image: none;
+  }
+
+  .site-header__inner,
+  .header-nav {
+    background-color: $color-primary;
+  }
+
+  // Search
+  // -------------
+
+  // Search input box
+  .block-search-wide__wrapper,
+  .block-search-narrow {
+    color: $color-tertiary;
+    background-color: $color-secondary;
+
+    input[type="search"] {
+      color: $color-tertiary;
+      background-color: $color-secondary;
+    }
+  }
+
+  // Search button
+  .block-search-wide__button {
+    color: $color-secondary;
+
+    &[aria-expanded="true"] {
+      background-color: transparent;
+    }
+  }
+
+  // Navigation
+  // -------------
+
+  [class*="nav__menu-link"] {
+    color: $color-secondary;
+  }
+
+  // Hamburger Menu
+  // -------------
+
+  .mobile-nav-button[aria-expanded="false"] {
+    .mobile-nav-button__label {
+      color: $color-secondary;
+    }
+
+    .mobile-nav-button__icon,
+    .mobile-nav-button__icon::before,
+    .mobile-nav-button__icon::after {
+      border-color: $color-secondary;
+    }
+  }
+
+  .mobile-nav-button[aria-expanded="true"] {
+    .mobile-nav-button__label {
+      color: $color-primary;
+    }
+
+    .mobile-nav-button__icon,
+    .mobile-nav-button__icon::before,
+    .mobile-nav-button__icon::after {
+      border-color: $color-primary;
+    }
+  }
+}

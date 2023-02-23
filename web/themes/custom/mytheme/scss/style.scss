@@ -1,1 +1,6 @@
-@import "import";
+// * Imports
+
+@import "./abstracts/variables";
+@import "./layout/layout";
+@import "./layout/header";
+@import "./components/gallery";

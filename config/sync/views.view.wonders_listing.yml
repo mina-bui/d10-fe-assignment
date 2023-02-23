@@ -148,6 +148,7 @@ display:
           replica: false
           query_tags: {  }
       relationships: {  }
+      css_class: gallery
       header: {  }
       footer: {  }
       display_extenders: {  }

@@ -1,0 +1,20 @@
+// * Layout
+
+body {
+  color: $color-secondary;
+}
+
+.page-wrapper,
+.social-bar {
+  background-color: $color-primary;
+}
+
+a,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: inherit;
+}

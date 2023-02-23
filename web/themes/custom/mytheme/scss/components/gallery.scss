@@ -1,5 +1,24 @@
 // * Gallery
 
-// .view-wonders-listing {
-//   background: red !important;
-// }
+.gallery {
+  .view-content {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 3.125em;
+
+    .views-row {
+      flex: 0 0 calc(50% - 3.125em);
+    }
+  }
+
+  article {
+    .node__title {
+      font-size: 0;
+      margin: 0;
+      height: 0;
+    }
+    .node__content {
+      padding: 0;
+    }
+  }
+}

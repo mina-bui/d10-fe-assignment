@@ -1,13 +1,22 @@
 // * Variables
 
-// -------------
 // Colors
 // -------------
 
 $white: #fff;
-$blue_500: #019add;
+$black: #000;
+$blue-500: #019add;
 
+$color-primary: $blue-500;
+$color-secondary: $white;
+$color-tertiary: $black;
+
+// Typography
 // -------------
+
+$ff-primary: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
+  "Courier New", monospace;
+
 // Media Queries
 // -------------
 
