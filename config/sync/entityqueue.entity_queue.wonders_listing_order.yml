@@ -1,0 +1,26 @@
+uuid: 62a50d73-9899-4e2c-b487-14607e9a3cf3
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: wonders_listing_order
+label: 'Wonders Listing Order'
+handler: simple
+handler_configuration: {  }
+entity_settings:
+  target_type: node
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      wonder: wonder
+    sort:
+      field: _none
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: ''
+queue_settings:
+  min_size: 0
+  max_size: 0
+  act_as_queue: false
+  reverse: false

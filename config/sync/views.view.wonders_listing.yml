@@ -3,9 +3,11 @@ langcode: en
 status: true
 dependencies:
   config:
+    - entityqueue.entity_queue.wonders_listing_order
     - node.type.wonder
     - system.menu.main
   module:
+    - entityqueue
     - node
     - user
 id: wonders_listing
@@ -95,16 +97,15 @@ display:
         options: {  }
       empty: {  }
       sorts:
-        title:
-          id: title
-          table: node_field_revision
-          field: title
+        entityqueue_relationship:
+          id: entityqueue_relationship
+          table: node_field_data
+          field: entityqueue_relationship
           relationship: none
           group_type: group
           admin_label: ''
           entity_type: node
-          entity_field: title
-          plugin_id: standard
+          plugin_id: entity_queue_position
           order: ASC
           expose:
             label: ''
@@ -147,7 +148,18 @@ display:
           distinct: false
           replica: false
           query_tags: {  }
-      relationships: {  }
+      relationships:
+        entityqueue_relationship:
+          id: entityqueue_relationship
+          table: node_field_data
+          field: entityqueue_relationship
+          relationship: none
+          group_type: group
+          admin_label: 'Content queue'
+          entity_type: node
+          plugin_id: entity_queue
+          required: false
+          limit_queue: wonders_listing_order
       css_class: gallery
       header: {  }
       footer: {  }
@@ -159,7 +171,10 @@ display:
         - 'languages:language_interface'
         - 'user.node_grants:view'
         - user.permissions
-      tags: {  }
+      tags:
+        - 'config:entityqueue.entity_queue.wonders_listing_order'
+        - entity_field_info
+        - views_data
   page_1:
     id: page_1
     display_title: Page
@@ -180,4 +195,7 @@ display:
         - 'languages:language_interface'
         - 'user.node_grants:view'
         - user.permissions
-      tags: {  }
+      tags:
+        - 'config:entityqueue.entity_queue.wonders_listing_order'
+        - entity_field_info
+        - views_data
