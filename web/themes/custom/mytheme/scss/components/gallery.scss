@@ -6,9 +6,13 @@
     flex-wrap: wrap;
     justify-content: center;
     gap: 1.125rem;
+    column-gap: 1.125rem;
+    margin: 2rem 0;
 
     @media (min-width: 31.25rem) {
-      gap: 3.125em;
+      gap: 4rem;
+      column-gap: 1.5rem;
+      margin: 6rem 0;
     }
 
     .views-row {

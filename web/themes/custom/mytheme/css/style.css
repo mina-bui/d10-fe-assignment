@@ -70,10 +70,14 @@ header .mobile-nav-button[aria-expanded=true] .mobile-nav-button__icon::after {
   flex-wrap: wrap;
   justify-content: center;
   gap: 1.125rem;
+  column-gap: 1.125rem;
+  margin: 2rem 0;
 }
 @media (min-width: 31.25rem) {
   .gallery.view .view-content {
-    gap: 3.125em;
+    gap: 4rem;
+    column-gap: 1.5rem;
+    margin: 6rem 0;
   }
 }
 .gallery.view .view-content .views-row {
