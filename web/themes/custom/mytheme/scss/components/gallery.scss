@@ -17,6 +17,30 @@
       @media (min-width: 31.25rem) {
         flex: 0 0 calc(50% - 3.125em);
       }
+
+      // Equilateral triangle shaped
+      &:nth-of-type(2) {
+        .field--name-field-wonder-image img {
+          clip-path: polygon(50% 0, 100% 100%, 0 100%);
+        }
+      }
+
+      // Circle shaped
+      &:nth-of-type(3) {
+        .field--name-field-wonder-image img {
+          border-radius: 100%;
+        }
+      }
+
+      // Rectangle shaped
+      &:nth-of-type(4) {
+        .field--name-field-wonder-image img {
+          aspect-ratio: 2/3;
+          object-fit: cover;
+          width: 70%;
+          margin: 0 auto;
+        }
+      }
     }
   }
 

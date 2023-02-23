@@ -84,6 +84,18 @@ header .mobile-nav-button[aria-expanded=true] .mobile-nav-button__icon::after {
     flex: 0 0 calc(50% - 3.125em);
   }
 }
+.gallery.view .view-content .views-row:nth-of-type(2) .field--name-field-wonder-image img {
+  clip-path: polygon(50% 0, 100% 100%, 0 100%);
+}
+.gallery.view .view-content .views-row:nth-of-type(3) .field--name-field-wonder-image img {
+  border-radius: 100%;
+}
+.gallery.view .view-content .views-row:nth-of-type(4) .field--name-field-wonder-image img {
+  aspect-ratio: 2/3;
+  object-fit: cover;
+  width: 70%;
+  margin: 0 auto;
+}
 .gallery.view article .node__title {
   font-size: 0;
   margin: 0;
