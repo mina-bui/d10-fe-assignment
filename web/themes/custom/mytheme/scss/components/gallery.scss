@@ -1,13 +1,22 @@
 // * Gallery
 
-.gallery {
+.gallery.view {
   .view-content {
     display: flex;
     flex-wrap: wrap;
-    gap: 3.125em;
+    justify-content: center;
+    gap: 1.125rem;
+
+    @media (min-width: 31.25rem) {
+      gap: 3.125em;
+    }
 
     .views-row {
-      flex: 0 0 calc(50% - 3.125em);
+      flex: 0 0 calc(100% - 1.125rem);
+
+      @media (min-width: 31.25rem) {
+        flex: 0 0 calc(50% - 3.125em);
+      }
     }
   }
 
