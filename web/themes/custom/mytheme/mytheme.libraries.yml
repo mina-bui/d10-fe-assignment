@@ -54,6 +54,7 @@ global-styling:
   js:
     js/checkbox.js: {}
     js/navigation-utils.js: {}
+    js/gallery.js: {}
 
   dependencies:
     - core/drupal
